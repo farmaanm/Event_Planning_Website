@@ -1,0 +1,682 @@
+<html>
+
+<head>
+	<title>The Bliss - We Got Your Event</title>
+	<link rel="icon" href="Images/WEB logo.png" type="image/gif"> 		<!--icon next to the title-->
+	<link rel="stylesheet" type="text/css" href="The Bliss.css">
+	<script language="javascript" type="text/javascript" src="The Bliss.js"></script>
+</head>
+
+<body>
+
+	<div class="fixedHead">
+	<table>
+	    <tr>
+			<td align="center" width="500px">
+				<img src="Images/delivery.png" width="40px" height="40px">
+			</td>
+			<td width=300px align="right">
+			    <h2 style="font-family:papyrus; color:#68118a; font-weight:bold; font-size:35px;"> The Bliss </h2>
+			</td>
+			<td align="center" width="500px">
+				<img src="Images/WEB logo.png" id="logo">
+			</td>
+			<td width=500px>
+			   <h2 style="font-family:papyrus; color:#68118a; font-weight:bold; font-size:35px;"> We Got Your Event </h2>
+			<td align="center" width="350px">
+				<input type="button" name="payments" id="cart" onclick="Payment()">
+			</td>
+		</tr>
+    </table>
+	
+	
+		<div id="navigationBar">
+			<button class="navButtons" onclick="Home()">Home</button>
+			<button class="navButtons" onclick="Cakes()">Cakes</button>
+			<button class="navButtons" onclick="FlowersDeco()">Flowers & Decoration</button>
+			<button class="navButtons" onclick="PhotographyMusic()">Photography & Music</button>
+			<button class="navButtons" onclick="CostumesMakeup()">Costumes & Makeup</button>
+			<button class="navButtons" onclick="Gifts()">Gift Items</button>
+			<button class="navButtons" onclick="Contact()">Contact us</button>
+			<button class="navButtons" style="border-right:none;" onclick="About()">About</button>
+		</div>
+	</div>
+
+	<img src="Images\Cakenew.jpg" id="coverimage">
+	
+	<table width="100%">
+		<tr>
+			<td class="categories"><a class="category">Wedding Cakes</a></td>
+			<td class="categories"><a class="category" href="#category2">Celebrated Cakes</a></td>
+			<td class="categories"><a class="category" href="#category3">Cupcakes</a></td>
+			<td class="categories"><a class="category" href="#category4">Dessert</a></td>
+			<td class="categories"><a class="category" href="#category5">Cookies</a></td>
+		</tr>
+	</table>
+
+	
+	<form class="form-submit" name="products" method="POST" action="http://localhost/TheBliss/Payment.php">
+	<fieldset id="category1">
+		<legend>Wedding Cakes</legend>
+		
+		<table width="100%">
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 1-->
+						<img src="Images\Cake.A1.jpg" class="productImage">
+						<font class="productName">Pop of Pink</font>
+						<p class="productDescription">Layers of pink roses seperated this all-white cakes.(4 tiers)</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.25,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10101"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 2-->
+						<img src="Images\Cake.A2.jpg" class="productImage">
+						<font class="productName">Meringue </font>
+						<p class="productDescription">Both two buttercream option for cakes,Both made with meringue.(3 tiers)</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.23,500</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10102"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 3-->
+						<img src="Images\Cake.A3.jpg"  class="productImage">
+						<font class="productName">White & Wonder</font>
+						<p class="productDescription">Realistic sugar orchid blooms brought dimension to this all-white cake.(3 tiers)</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.22,550</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10103" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 4-->
+						<img src="Images\Cake.A4.jpg" class="productImage">
+						<font class="productName">Dark & Dramatic</font>
+						<p class="productDescription">Dramatically wrapped in black,sugar & sparkle to the cake.(5 tiers)</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.26,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10104" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+			
+			<tr style="height:15px;"></tr>
+			
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 5-->
+						<img src="Images\Cake.A5.jpg" class="productImage">
+						<font class="productName">Rose Tiers</font>
+						<p class="productDescription">Layers of pink roses seperated this all white cakes(7 tiers)</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.27,750</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10105" onclick="AddToCart()"></button></td> <br>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 6-->
+						<img src="Images\Cake.A6.jpg" class="productImage">
+						<font class="productName">Greenery</font>
+						<p class="productDescription">White fondant-clad & finised with white peonies & a few fern springs(4tiers)</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.25,500</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10106" onclick="AddToCart()"></button></td> <br>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 7-->
+						<img src="Images\Cake.A7.jpg" class="productImage">
+						<font class="productName">Fondant</font>
+						<p class="productDescription">Fondant is a sweet sugar paste rolled out in large pieces to place & shape(3 tiers)</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.23,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10107" onclick="AddToCart()"></button></td> <br>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 8-->
+						<img src="Images\Cake.A8.jpg" class="productImage">
+						<font class="productName">Cheery Blossoms</font>
+						<p class="productDescription">Cherry blossom sugar flowers & on this all-white cake that inclued tiers of varying diameters(4 tiers)</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.24,500</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10108" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</fieldset>
+	
+	<br><br>
+	
+	<fieldset id="category2">
+		<legend>Celebrated Cakes</legend>
+		<table width="100%">
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 2, Product 1-->
+						<img src="Images\Cake.B1.jpg" class="productImage">
+						<font class="productName">Milk & Cookies Layer </font>
+						<p class="productDescription">Made with layers of brown sugar vanila filled with vanila frosting & crumbled up chocolate chip cookies</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.3,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10201" onclick="AddToCart()"></button></td> <br>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 2, Product 2-->
+						<img src="Images\Cake.B2.jpg" class="productImage">
+						<font class="productName">Ester </font>
+						<p class="productDescription">This is decorated as a tomb,with a cross & crown of throns on top</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.3,750</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10202" onclick="AddToCart()"></button></td> <br> <br>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 2, Product 3-->
+						<img src="Images\Cake.B3.jpg" class="productImage">
+						<font class="productName">Peanut Butter Chocolate </font>
+						<p class="productDescription">Made with layers of moist chocolate cake,peanut butter frosting & chopped peanut butter cups</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.3,250</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10203" onclick="AddToCart()"></button></td> <br>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 2, Product 4-->
+						<img src="Images\Cake.B4.jpg" class="productImage">
+						<font class="productName">Peppermint Chip Layer </font>
+						<p class="productDescription">Made with a super moist & fluffy pepermint cake & pepermint chip frosting</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.3,750</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10204" onclick="AddToCart()"></button></td> <br>
+							</tr> 
+						</table>
+					</div>
+				</td>
+			</tr>
+			
+			<tr style="height:15px;"></tr>
+			
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 2, Product 5-->
+						<img src="Images\Cake.B5.jpg" class="productImage">
+						<font class="productName">Lemon </font>
+						<p class="productDescription">Fluffy,sweet & perfectly tangy lemon cake topped with buttercream frosting</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.2,500</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10205" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 2, Product 6-->
+						<img src="Images\Cake.B6.png" class="productImage">
+						<font class="productName">Black Forest </font>
+						<p class="productDescription">Made with a moist chocolate cake,fresh whipped cream,cherries & cherry liqueur</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.3,500</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10206" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 2, Product 7-->
+						<img src="Images\Cake.B7.jpg" class="productImage">
+						<font class="productName">Red Vine </font>
+						<p class="productDescription">Super moist,baked with red wine & filled with a fresh raspberry buttercream</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.3,500</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10207" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 2, Product 8-->
+						<img src="Images\Cake.B8.jpg" class="productImage">
+						<font class="productName">Fresh Berry Layer </font>
+						<p class="productDescription">Light,fruity & the perfect for sharing</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.3,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10208" onclick="AddToCart()"></button></td> <br>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</fieldset>
+	
+	<br><br>
+	
+	<fieldset id="category3">
+		<legend>Cupcakes</legend>
+		<table width="100%">
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 3, Product 1-->
+						<img src="Images\Cake.C1.jpg" class="productImage">
+						<font class="productName">Vanila</font>
+						<p class="productDescription">Makes perfectly moist!These light & fluffy cupcakes are topped with creamy vanila buttercream & topped with sprinkles(6PCS)</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.1,200</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10301" onclick="AddToCart()"></button></td> <br>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 3, Product 2-->
+						<img src="Images\Cake.C2.jpg" class="productImage">
+						<font class="productName">Chocolate</font>
+						<p class="productDescription">Completely from scratch & full of chocolate flavour!So moist,it melts & the frosting & silky smooth,super chocolately frosting(6PCS)</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.1,200</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10302" onclick="AddToCart()"></button></td> <br>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 3, Product 3-->
+						<img src="Images\Cake.C3.jpg" class="productImage">
+						<font class="productName">Caramel</font>
+						<p class="productDescription">Moist & so full os flavor & delicious!(6PCS)</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.1,350</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10303" onclick="AddToCart()"></button></td> <br> <br> <br>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 3, Product 4-->
+						<img src="Images\Cake.C4.jpg" class="productImage">
+						<font class="productName">Strawberry</font>
+						<p class="productDescription">Filled with strawberry truffle filling,topped with white chocolate buttercream(6PCS)</p> <br> <br>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.1,250</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10304" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+			
+			<tr style="height:15px;"></tr>
+			
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 3, Product 5-->
+						<img src="Images\Cake.C5.jpg" class="productImage">
+						<font class="productName">Oreo Chocolate</font>
+						<p class="productDescription">Super moist & delicious!Bake that love right into cupcake perfection(6PCS)</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.1,350</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10305" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 3, Product 6-->
+						<img src="Images\Cake.C6.jpg" class="productImage">
+						<font class="productName">Red Velvert</font>
+						<p class="productDescription">Super moist & a classic feel good!(6PCS)</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.1,200</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10306" onclick="AddToCart()"></button></td> <br>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 3, Product 7-->
+						<img src="Images\Cake.C7.jpg" class="productImage">
+						<font class="productName">Pumpkin Cheese </font>
+						<p class="productDescription">Moist,winderfully spiced & pumpkiny!And thr icing is pure heaven(6PCS)</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.1,150</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10307" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 3, Product 8-->
+						<img src="Images\Cake.C8.jpg" class="productImage">
+						<font class="productName">Mimosa </font>
+						<p class="productDescription">Made with a moist champagne cupcake & fresh orange frosting(6PCS)</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.1,150</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10308" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+		</table>
+	
+	</fieldset>
+	
+	<br><br>
+	
+	<fieldset id="category4">
+		<legend>Dessert</legend>
+		<table width="100%">
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 4, Product 1-->
+						<img src="Images\Cake.D1.jpg" class="productImage">
+						<font class="productName">Batter with Ice cream </font>
+						<p class="productDescription">Made with layers & no churn cake batter ice cream</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.870</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10401" onclick="AddToCart()"></button></td> <br> <br>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 4, Product 2-->
+						<img src="Images\Cake.D2.jpg" class="productImage">
+						<font class="productName">Swirl Ice Cream </font>
+						<p class="productDescription">Wonderful blend of rich chocolate cake & no churn ice cream.Chocolate& vanila come together perfectly for this classic frozen cake</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.850</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10402" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 4, Product 3-->
+						<img src="Images\Cake.D3.jpg" class="productImage">
+						<font class="productName">Cherry Ice cream </font>
+						<p class="productDescription">Light,a little fruity & full of almond & amaretto flavor</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.810</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10403" onclick="AddToCart()"></button></td> <br> <br>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 4, Product 4-->
+						<img src="Images\Cake.D4.jpg" class="productImage">
+						<font class="productName">Cannoli Icebox </font>
+						<p class="productDescription">With layers of graham crackers & cannoli filling</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.850</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10404" onclick="AddToCart()"></button></td> <br> <br>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+			
+			<tr style="height:15px;"></tr>
+			
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 4, Product 5-->
+						<img src="Images\Cake.D5.jpg" class="productImage">
+						<font class="productName">Candy Corn Icebox </font>
+						<p class="productDescription">Fun,cute & tasty.Completely no bake,& full of delicious vanila & buttery shortbread</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.825</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10405" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 4, Product 6-->
+						<img src="Images\Cake.D6.jpg" class="productImage">
+						<font class="productName"> Batter Fudge</font>
+						<p class="productDescription">Cake batter,fudge sauce & ice cream</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.800</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10406" onclick="AddToCart()"></button></td> <br> <br>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 4, Product 7-->
+						<img src="Images\Cake.D7.jpg" class="productImage">
+						<font class="productName">Pumpkin Cheese </font>
+						<p class="productDescription">With layers of moist pumpkin cake & mascarpone frosting</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.875</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10407" onclick="AddToCart()"></button></td> <br>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 4, Product 8-->
+						<img src="Images\Cake.D8.jpg" class="productImage">
+						<font class="productName">Butter Ice cream Pie</font>
+						<p class="productDescription">Made into churn ice cream & a layer of rainbow chip frosting</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.830</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10408" onclick="AddToCart()"></button></td> <br>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</fieldset>
+	
+	<br><br>
+	
+	<fieldset id="category5">
+		<legend>Cookies</legend>
+		<table width="100%">
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 5, Product 1-->
+						<img src="Images\Cake.E1.jpg" class="productImage">
+						<font class="productName">Buttery Classic </font>
+						<p class="productDescription">Buttery,tender & dough is super easy to put together,So many ways to decorate them</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.575</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10501" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 5, Product 2-->
+						<img src="Images\Cake.E2.jpg" class="productImage">
+						<font class="productName">Batter chocolate chip </font>
+						<p class="productDescription">Cake mix cookies ever!Don't lack at all on the cake batter flavor either-they use an entire box of cake mix</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.600</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10502" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 5, Product 3-->
+						<img src="Images\Cake.E3.jpg" class="productImage">
+						<font class="productName">Chocolate Sandwitch </font>
+						<p class="productDescription">Two soft chocolate cookies sandwitched around delicious chocolate frosting</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.610</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10503" onclick="AddToCart()"></button></td> <br>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 5, Product 4-->
+						<img src="Images\Cake.E4.jpg" class="productImage">
+						<font class="productName">Candy Cane </font>
+						<p class="productDescription">Made with a simple cookies dough flavoured with pepermint,colored red & white,& twisted into a candy cane shape</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.520</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10504" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+			
+			<tr style="height:15px;"></tr>
+			
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 5, Product 5-->
+						<img src="Images\Cake.E5.jpg" class="productImage">
+						<font class="productName">Baileys Chocolate </font>
+						<p class="productDescription">So moist,chewy & delicious!Have just the right amount of Baileys flavor & white chocolate on the outside</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.540</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10505" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 5, Product 6-->
+						<img src="Images\Cake.E6.jpg" class="productImage">
+						<font class="productName">Mini Chip Hi Hat </font>
+						<p class="productDescription">Make using chocolate boxed caje mix.They're minty,chocolaty!</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.590</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10506" onclick="AddToCart()"></button></td> <br>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 5, Product 7-->
+						<img src="Images\Cake.E7.jpg" class="productImage">
+						<font class="productName">Sprinkle Sugar Cookies</font>
+						<p class="productDescription">With a layer of sprinkles or fold the sprinkles right into the batter</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.520</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10507" onclick="AddToCart()"></button></td> <br>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 5, Product 8-->
+						<img src="Images\Cake.E8.jpg" class="productImage">
+						<font class="productName">Reinder Cookie Balls</font>
+						<p class="productDescription">Made with few simple ingedients & the cutest little treat</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.555</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="10508" onclick="AddToCart()"></button></td> <br>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+		</table>
+		
+	</fieldset>
+	</form>
+	
+	<br>
+	
+	<div id="footerContainer">
+	
+		<div id="footerLink" style="width:18%; margin-left:40px; margin-bottom:-90px; padding-top:55px;">
+			26, 15 St Anthoney's Rd,<br>Negombo 11500<br><br>+94 75 916 8916
+		</div>
+	
+		<center>
+			<div>
+				<img src="Images/WEB logo.png" id="footerLogo">
+			</div>
+			<a id="footerLink" href="Contact.html">Contact us |</a>
+			<a id="footerLink" href="About.html"> About</a>
+		</center>
+		
+		<div style="width:10%; margin-left:82%; margin-top:-80px;">
+			<a href="https://web.facebook.com/The-Bliss-103466258740385/"><button class="socialmedia" style="background-image:url('Images/facebook.png');"></button></a>
+			<a href="https://www.instagram.com/the_bliss60/"><button class="socialmedia" style="background-image:url('Images/instagram.png');"></button></a>
+			<a href="https://twitter.com/_The_Bliss_"><button class="socialmedia" style="background-image:url('Images/twitter.png');"></button></a>
+			<a href="mailto: thebliss60@gmail.com"><button class="socialmedia" style="background-image:url('Images/gmail.png');"></button></a>
+		</div>
+		
+	</div>
+	
+</body>
+</html>

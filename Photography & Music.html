@@ -1,0 +1,160 @@
+<html>
+
+<head>
+	<title>The Bliss - We Got Your Event</title>
+	<link rel="icon" href="Images/WEB logo.png" type="image/gif"> 		<!--icon next to the title-->
+	<link rel="stylesheet" type="text/css" href="The Bliss.css">
+	<script language="javascript" type="text/javascript" src="The Bliss.js"></script>
+</head>
+
+<body>
+
+	<div class="fixedHead">
+	<table>
+	    <tr>
+			<td align="center" width="500px">
+				<img src="Images/delivery.png" width="40px" height="40px">
+			</td>
+			<td width=300px align="right">
+			    <h2 style="font-family:papyrus; color:#68118a; font-weight:bold; font-size:35px;"> The Bliss </h2>
+			</td>
+			<td align="center" width="500px">
+				<img src="Images/WEB logo.png" id="logo">
+			</td>
+			<td width=500px>
+			   <h2 style="font-family:papyrus; color:#68118a; font-weight:bold; font-size:35px;"> We Got Your Event </h2>
+			<td align="center" width="350px">
+				<input type="button" name="payments" id="cart" onclick="Payment()">
+			</td>
+		</tr>
+    </table>
+	
+	
+		<div id="navigationBar">
+			<button class="navButtons" onclick="Home()">Home</button>
+			<button class="navButtons" onclick="Cakes()">Cakes</button>
+			<button class="navButtons" onclick="FlowersDeco()">Flowers & Decoration</button>
+			<button class="navButtons" onclick="PhotographyMusic()">Photography & Music</button>
+			<button class="navButtons" onclick="CostumesMakeup()">Costumes & Makeup</button>
+			<button class="navButtons" onclick="Gifts()">Gift Items</button>
+			<button class="navButtons" onclick="Contact()">Contact us</button>
+			<button class="navButtons" style="border-right:none;" onclick="About()">About</button>
+		</div>
+	</div>
+
+	<img src="Images/infinity.jpg" id="coverimage">
+	
+	<table width="100%">
+		
+	</table><br><br>
+	
+	<form name="products">
+	<fieldset id="category1" style="padding-bottom:10px;">
+		<legend>Music</legend>
+		
+		<table width="100%">
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 1-->
+						<img src="Images/stage3.jpg" class="productImage" style="margin-bottom:15px;">
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 2-->
+						<img src="Images/stage1.jpg" class="productImage" style="margin-bottom: 15px;">
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 3-->
+						<img src="Images/wed.png" class="productImage" style="margin-bottom:15px;">
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 4-->
+						<img src="Images/stage.jpg" class="productImage" style="margin-bottom:15px;">
+					</div>
+				</td>
+			</tr>
+			
+			<br>
+
+			<tr>
+				<td colspan="4" align="right" style="padding-top:25px; padding-right:25px; padding-bottom:2px;">
+					<input type="button" id="call" name="cartButton" onclick="Contact()">
+				</td>
+			</tr>
+		</table>
+	</fieldset>
+	
+	<br><br>
+	
+	<fieldset id="category2" style="padding-bottom:10px;">
+		<legend>Photography</legend>
+		
+		<table width="100%">
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 2, Product 1-->
+						<img src="Images/wedding.jpg" class="productImage">
+						<font class="productName">Wedding</font>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 2, Product 2-->
+						<img src="Images/bday.jpg" class="productImage">
+						<font class="productName">Birthday</font>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 2, Product 3-->
+						<img src="Images/born1.jpg" class="productImage">
+						<font class="productName">New Born</font>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 2, Product 4-->
+						<img src="Images/other.jpg" class="productImage">
+						<font class="productName">Other</font>
+					</div>
+				</td>
+			</tr>
+							
+			<br>
+			
+			<tr>
+				<td colspan="4" align="right" style="padding-top:25px; padding-right:25px; padding-bottom:2px;">
+					<input type="button" id="call" name="cartButton" onclick="Contact()">
+				</td>
+			</tr>
+		</table>
+		
+	</fieldset>
+	</form>
+	
+	<br>
+	
+	<div id="footerContainer">
+	
+		<div id="footerLink" style="width:18%; margin-left:40px; margin-bottom:-90px; padding-top:55px;">
+			26, 15 St Anthoney's Rd,<br>Negombo 11500<br><br>+94 75 916 8916
+		</div>
+	
+		<center>
+			<div>
+				<img src="Images/WEB logo.png" id="footerLogo">
+			</div>
+			<a id="footerLink" href="Contact.html">Contact us |</a>
+			<a id="footerLink" href="About.html"> About</a>
+		</center>
+		
+		<div style="width:10%; margin-left:82%; margin-top:-80px;">
+			<a href="https://web.facebook.com/The-Bliss-103466258740385/"><button class="socialmedia" style="background-image:url('Images/facebook.png');"></button></a>
+			<a href="https://www.instagram.com/the_bliss60/"><button class="socialmedia" style="background-image:url('Images/instagram.png');"></button></a>
+			<a href="https://twitter.com/_The_Bliss_"><button class="socialmedia" style="background-image:url('Images/twitter.png');"></button></a>
+			<a href="mailto: thebliss60@gmail.com"><button class="socialmedia" style="background-image:url('Images/gmail.png');"></button></a>
+		</div>
+		
+	</div>
+	
+</body>
+</html>

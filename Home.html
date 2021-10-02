@@ -1,0 +1,168 @@
+<html>
+
+<head>
+	<title>The Bliss - We Got Your Event</title>
+	<link rel="icon" href="Images/WEB logo.png" type="image/gif"> 		<!--icon next to the title-->
+	<link rel="stylesheet" type="text/css" href="The Bliss.css">
+	<script language="javascript" type="text/javascript" src="The Bliss.js"></script>
+</head>
+
+<body>
+
+<div class="fixedHead">
+	<table>
+	    <tr>
+			<td align="center" width="500px">
+				<img src="Images/delivery.png" width="40px" height="40px">
+			</td>
+			<td width=300px align="right">
+			    <h2 style="font-family:papyrus; color:#68118a; font-weight:bold; font-size:35px;"> The Bliss </h2>
+			</td>
+			<td align="center" width="500px">
+				<img src="Images/WEB logo.png" id="logo">
+			</td>
+			<td width=500px>
+			   <h2 style="font-family:papyrus; color:#68118a; font-weight:bold; font-size:35px;"> We Got Your Event </h2>
+			<td align="center" width="350px">
+				<input type="button" name="payments" id="cart" onclick="Payment()">
+			</td>
+		</tr>
+    </table>
+	
+	
+		<div id="navigationBar">
+			<button class="navButtons" onclick="Home()">Home</button>
+			<button class="navButtons" onclick="Cakes()">Cakes</button>
+			<button class="navButtons" onclick="FlowersDeco()">Flowers & Decoration</button>
+			<button class="navButtons" onclick="PhotographyMusic()">Photography & Music</button>
+			<button class="navButtons" onclick="CostumesMakeup()">Costumes & Makeup</button>
+			<button class="navButtons" onclick="Gifts()">Gift Items</button>
+			<button class="navButtons" onclick="Contact()">Contact us</button>
+			<button class="navButtons" style="border-right:none;" onclick="About()">About</button>
+		</div>
+	</div>
+
+
+	<div style="background-size:cover; width:100%; height:800px;">
+		<img src="Images/cover 2.png" class="HomeImages">
+		<img src="Images/cover 1.jpg" class="HomeImages">
+		<img src="Images/cover 3.jfif" class="HomeImages">
+		<img src="Images/cover 4.jpg" class="HomeImages">
+		<img src="Images/cover 5.jpg" class="HomeImages">
+		<img src="Images/cover 6.jpeg" class="HomeImages">
+	</div>
+	
+										<!--Slides animation-->
+	<script>
+		var myIndex = 0;
+		SlideShow();
+
+		function SlideShow()
+		{
+			var count;
+			var img = document.getElementsByClassName("HomeImages");
+  
+			for (count = 0; count < img.length; count++) 
+			{
+				img[count].style.display = "none";  
+			}
+  
+			myIndex++;
+			if (myIndex > img.length) 
+			{
+				myIndex = 1
+			}    
+  
+			img[myIndex-1].style.display = "block";  
+			setTimeout(SlideShow, 9000); // Change image every 9 seconds
+		}
+	</script>
+
+	<br><br><br>
+
+	<p id="para">
+		<span style="font-style:normal">Welcome to THE BLISS</span><br><br> Already feeling tired by thinking how to plan your event ? <br> Say no to stress because we are ready to lead you to make your dream event a reality.<br> Get in touch with us.
+	</p>
+	
+	<br><br>
+	
+	
+		<center>
+		<table>
+			<tr>
+				<td>
+					<div class="container">
+						<img src="Images/cakes.jpg"  class="image" >
+						<div class="middle">
+						<div class="text">Cakes</div>
+						</div>
+					</div>
+				</td>
+                <td>				
+					<div class="container">
+						<img src="Images/flowers.jpg"  class="image" >
+						<div class="middle">
+						<div class="text">Flowers<br> &<br>Decoration</div>
+						</div>
+					</div>
+			     </td>
+			     <td>
+					<div class="container">
+						<img src="Images/stage.jpg"  class="image" >
+						<div class="middle">
+						<div class="text">Photography <br>& <br>Music</div>
+						</div>
+					</div>
+			    </td>
+            </tr>
+        </table>
+		
+        <table>
+			<tr>
+				<td style="padding-top:5px ;">
+					<div class="container">
+						<img src="Images/cos.jpg"  class="image">
+						<div class="middle">
+						<div class="text">Costumes <br>&<br> Makeup</div>
+						</div>
+					</div>
+				</td>
+                <td style="padding-top: 5px;">				
+						<div class="container">
+							<img src="Images/gift.jpg"  class="image" >
+							<div class="middle">
+							<div class="text">Gift Items</div>
+							</div>
+						</div>
+			     </td>
+            </tr>
+        </table>
+        </center>
+
+    <br>
+	
+	<div id="footerContainer">
+	
+		<div id="footerLink" style="width:18%; margin-left:40px; margin-bottom:-90px; padding-top:55px;">
+			26, 15 St Anthoney's Rd,<br>Negombo 11500<br><br>+94 75 916 8916
+		</div>
+	
+		<center>
+			<div>
+				<img src="Images/WEB logo.png" id="footerLogo">
+			</div>
+			<a id="footerLink" href="Contact.html">Contact us |</a>
+			<a id="footerLink" href="About.html"> About</a>
+		</center>
+		
+		<div style="width:10%; margin-left:82%; margin-top:-80px;">
+			<a href="https://web.facebook.com/The-Bliss-103466258740385/"><button class="socialmedia" style="background-image:url('Images/facebook.png');"></button></a>
+			<a href="https://www.instagram.com/the_bliss60/"><button class="socialmedia" style="background-image:url('Images/instagram.png');"></button></a>
+			<a href="https://twitter.com/_The_Bliss_"><button class="socialmedia" style="background-image:url('Images/twitter.png');"></button></a>
+			<a href="mailto: thebliss60@gmail.com"><button class="socialmedia" style="background-image:url('Images/gmail.png');"></button></a>
+		</div>
+		
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,771 @@
+<html>
+
+<head>
+	<title>The Bliss - We Got Your Event</title>
+	<link rel="icon" href="Images/WEB logo.png" type="image/gif"> 		<!--icon next to the title-->
+	<link rel="stylesheet" type="text/css" href="The Bliss.css">
+	<script language="javascript" type="text/javascript" src="The Bliss.js"></script>
+</head>
+
+<body>
+
+	<div class="fixedHead">
+	<table>
+	    <tr>
+			<td align="center" width="500px">
+				<img src="Images/delivery.png" width="40px" height="40px">
+			</td>
+			<td width=300px align="right">
+			    <h2 style="font-family:papyrus; color:#68118a; font-weight:bold; font-size:35px;"> The Bliss </h2>
+			</td>
+			<td align="center" width="500px">
+				<img src="Images/WEB logo.png" id="logo">
+			</td>
+			<td width=500px>
+			   <h2 style="font-family:papyrus; color:#68118a; font-weight:bold; font-size:35px;"> We Got Your Event </h2>
+			<td align="center" width="350px">
+				<input type="button" name="payments" id="cart" onclick="Payment()">
+			</td>
+		</tr>
+    </table>
+	
+	
+		<div id="navigationBar">
+			<button class="navButtons" onclick="Home()">Home</button>
+			<button class="navButtons" onclick="Cakes()">Cakes</button>
+			<button class="navButtons" onclick="FlowersDeco()">Flowers & Decoration</button>
+			<button class="navButtons" onclick="PhotographyMusic()">Photography & Music</button>
+			<button class="navButtons" onclick="CostumesMakeup()">Costumes & Makeup</button>
+			<button class="navButtons" onclick="Gifts()">Gift Items</button>
+			<button class="navButtons" onclick="Contact()">Contact us</button>
+			<button class="navButtons" style="border-right:none;" onclick="About()">About</button>
+		</div>
+	</div>
+
+	<img src="Images/Deco cover.jpg" id="coverimage">
+	
+	<table width="100%">
+		<tr>
+			<td class="categories"><a class="category">Flowers</a></td>
+			<td class="categories"><a class="category" href="#category2">Balloons</a></td>
+			<td class="categories"><a class="category" href="#category3">Candles</a></td>
+			<td class="categories"><a class="category" href="#category4">Lights</a></td>
+			<td class="categories"><a class="category" href="#category5">Other</a></td>
+		</tr>
+	</table>
+	
+	<form name="products" class="form-submit" method="POST" action="http://localhost/TheBliss/Payment.php">
+	<fieldset id="category1">					<!--flowers-->
+		<legend>Flowers</legend>
+		
+		<table width="100%">
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 1-->
+						<img src="Images/flowers 1.jpg" class="productImage">
+						<font class="productName">White Flower Bunch</font>
+						<p class="productDescription">A bunch of white flowers suitable for table decorations.<br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.1,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20101"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 2-->
+						<img src="Images/flowers 11.jpg" class="productImage">
+						<font class="productName">Bunch of Colored Roses</font>
+						<p class="productDescription">A bunch consisting of 10 colored roses.<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.1,200</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20102" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 3-->
+						<img src="Images/flowers 15.jpg" class="productImage">
+						<font class="productName">Bunch of Colored Tulips</font>
+						<p class="productDescription">A bunch of colored tulips consisting of 10 flowers.<br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.1,800</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20103" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 4-->
+						<img src="Images/flowers 4.jpg" class="productImage">
+						<font class="productName">Blue Orchid Vase</font>
+						<p class="productDescription">A small blue orchid branch with a vase.<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.1,500</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20104" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+			
+			<tr style="height:15px;"></tr>
+			
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 5-->
+						<img src="Images/flowers 9.jpg" class="productImage">
+						<font class="productName">Bunch of Sunflowers</font>
+						<p class="productDescription">4 stems of sunflowers.<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.1,500</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20105" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 6-->
+						<img src="Images/flowers 6.jpg" class="productImage">
+						<font class="productName">Small Flower Vase</font>
+						<p class="productDescription">A mix of colored Carnation flowers with a red vase.<br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.1,100</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20106" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 7-->
+						<img src="Images/flowers 7.jpg" class="productImage">
+						<font class="productName">Small Bouquet</font>
+						<p class="productDescription">Includes a mix of flowers and furns.<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.1,300</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20107" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 8-->
+						<img src="Images/flowers 8.jpg" class="productImage">
+						<font class="productName">White Roses with vase</font>
+						<p class="productDescription">A vase of white roses with small furns.<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.1,850</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20108" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+			
+			<tr style="height:15px;"></tr>
+			
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 9-->
+						<img src="Images/flowers 18.jpg" class="productImage">
+						<font class="productName">Bunch of yellow Tulips</font>
+						<p class="productDescription">A bunch of yellow tulips wrapped with brown gift paper.<br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.1,500</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20109" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 10-->
+						<img src="Images/flowers 17.jpg" class="productImage">
+						<font class="productName">Bunch of White Roses</font>
+						<p class="productDescription">A small bunch of white roses consisting of 8 flowers.<br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.1,600</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20110" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 11-->
+						<img src="Images/flowers 16.jpg" class="productImage">
+						<font class="productName">Small Pink Rose Bouquet</font>
+						<p class="productDescription">A pink rose bouquet suitable for weddings.<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.1,600</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20111" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 12-->
+						<img src="Images/flowers 20.jpg" class="productImage">
+						<font class="productName">Pink Flower Petals</font>
+						<p class="productDescription">A basket of pink Rose petals.<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.1,500</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20112" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+			
+			<tr style="height:15px;"></tr>
+			
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 13-->
+						<img src="Images/flowers 21.jpg" class="productImage">
+						<font class="productName">White Tulip Bouquet</font>
+						<p class="productDescription">A bouquet of white Tulips wrapped with a pink gift paper and a bow.<br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.2,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20113" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 14-->
+						<img src="Images/flowers 22.jpg" class="productImage">
+						<font class="productName">White Flower Bouquet</font>
+						<p class="productDescription">A bouquet of small white flowers wrapped with brown gift paper.<br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.1,300</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20114" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 15-->
+						<img src="Images/flowers 23.jpg" class="productImage">
+						<font class="productName">Colored Flower Bouquet</font>
+						<p class="productDescription">A mix of colored flowers wrapped with brown gift paper.<br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.1,600</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20115" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 16-->
+						<img src="Images/flowers 24.jpg" class="productImage">
+						<font class="productName">Colored Flower Bouquet</font>
+						<p class="productDescription">A small bouquet of mixed colored flowers with furns wrapped with brown gift paper.<br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.900</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20116" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+			
+			<tr style="height:15px;"></tr>
+			
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 17-->
+						<img src="Images/flowers 25.jpg" class="productImage">
+						<font class="productName">Red Tulip Bouquet</font>
+						<p class="productDescription">A red tulip bouquet wrapped with brown gift paper.<br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.2,500</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20117" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 18-->
+						<img src="Images/flowers 26.jpg" class="productImage">
+						<font class="productName">White Rose Bouquet</font>
+						<p class="productDescription">A small bouquet of white roses with furns wrapped with brown gift paper.<br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.1,100</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20118" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	</fieldset>
+	
+	<br><br>
+	
+	<fieldset id="category2">
+		<legend>Balloons</legend>					<!--balloons-->
+		<table width="100%">
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 2, Product 1-->
+						<img src="Images/balloon letter.jpg" class="productImage">
+						<font class="productName">Letter Balloons</font>
+						<p class="productDescription">16inch 1pcs. Mention the required letters in the description box.<br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.300</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20201" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 2, Product 2-->
+						<img src="Images/balloon number.jpg" class="productImage">
+						<font class="productName">Number Balloons</font>
+						<p class="productDescription">16inch 2pcs. Mention the required numbers in the description box.<br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.500</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20202" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 2, Product 3-->
+						<img src="Images/balloon silk.jpg" class="productImage">
+						<font class="productName">Metallic Latex Balloons</font>
+						<p class="productDescription">10inch 20pcs. Mention the required colors in the description box.<br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.800</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20203" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 2, Product 4-->
+						<img src="Images/baloon normal.jpg" class="productImage">
+						<font class="productName">Colorful Balloons</font>
+						<p class="productDescription">10inch 20pcs. Mention the required colors in the description box.<br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.600</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20204" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+			
+			<tr style="height:15px;"></tr>
+			
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 2, Product 5-->
+						<img src="Images/balloons heart.jpg" class="productImage">
+						<font class="productName">Heart shaped Balloons</font>
+						<p class="productDescription">2 pcs of red and gold heart shaped balloons.<br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.600</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20205" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 2, Product 6-->
+						<img src="Images/balloons confetti.jpg" class="productImage">
+						<font class="productName">Confetti Balloons</font>
+						<p class="productDescription">2pcs of white transparent balloons filled with colored confetti.<br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.400</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20206" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td></div>
+				</td>
+				<td></div>
+				</td>
+			</tr>
+		</table>
+	</fieldset>
+	
+	<br><br>
+	
+	<fieldset id="category3">
+		<legend>Candles</legend>						<!--candles-->
+		<table width="100%">
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 3, Product 1-->
+						<img src="Images/Candles number.jpg" class="productImage">
+						<font class="productName">Number Candles</font>
+						<p class="productDescription">1 pcs. Mention the required numbers in the description box.</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.150</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20301" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 3, Product 2-->
+						<img src="Images/Candles sparkly.jpg" class="productImage">
+						<font class="productName">Sparkly Candles</font>
+						<p class="productDescription">5 pcs<br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.500</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20302" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 3, Product 3-->
+						<img src="Images/candles birthday.jpg" class="productImage">
+						<font class="productName">Birthday Candles</font>
+						<p class="productDescription">A packet of 10 candles.<br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.300</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20303" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 3, Product 4-->
+						<img src="Images/candles lantern.jpg" class="productImage">
+						<font class="productName">Candle Lanterns</font>
+						<p class="productDescription">A packet of 2 lanterns.<br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.450</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20304" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+			
+		</table>
+	
+	</fieldset>
+	
+	<br><br>
+	
+	<fieldset id="category4">
+		<legend>Lights</legend>						<!--lights-->
+		<table width="100%">
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 4, Product 1-->
+						<img src="Images/lights bulb.jpg" class="productImage">
+						<font class="productName">White Bulb Strings</font>
+						<p class="productDescription">1 string of 30 bulbs for rent. Mention the number of strings needed in the description box.</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.300</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20401" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 4, Product 2-->
+						<img src="Images/lights coloured 1.jpg" class="productImage">
+						<font class="productName">Colored LED Strings</font>
+						<p class="productDescription">1 string of 30 bulbs for rent. Mention the number of strings and colors required in the description box.(red, white, green)</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.500</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20402" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 4, Product 3-->
+						<img src="Images/lights coloured 2.jpg" class="productImage">
+						<font class="productName">Multicolored LED Strings</font>
+						<p class="productDescription">1 string of 30 colored bulbs for rent. Mention the number of strings required in the description box.</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.350</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20403" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 4, Product 4-->
+						<img src="Images/lights neon.jpg" class="productImage">
+						<font class="productName">Neon Lights</font>
+						<p class="productDescription">For rent only. Mention the colors in the description box.(red, yellow, green, blue)<br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.6,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20404" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+			
+			<tr style="height:15px;"></tr>
+			
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 4, Product 5-->
+						<img src="Images/lights white 1.jpg" class="productImage">
+						<font class="productName">White LED Bulb Strings</font>
+						<p class="productDescription">1 string of 30 colored bulbs for rent. Mention the number of strings required in the description box.</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.350</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20405" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 4, Product 6-->
+						<img src="Images/lights plain coloured.jpg" class="productImage">
+						<font class="productName">LED Bulb Mesh</font>
+						<p class="productDescription">1 mesh of 100 plain colored bulbs for rent. Mention the number of meshes required in the description box.</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.2,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20406" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	</fieldset>
+	
+	<br><br>
+	
+	<fieldset id="category5">
+		<legend>Other</legend>					<!--other-->
+		<table width="100%">
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 5, Product 1-->
+						<img src="Images/fluffy deco.jpg" class="productImage">
+						<font class="productName">Fluffy Deco with Lights</font>
+						<p class="productDescription">1 pcs.<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.300</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20501" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 5, Product 2-->
+						<img src="Images/fluffy deco 2.jpg" class="productImage">
+						<font class="productName">Fluffy Deco</font>
+						<p class="productDescription">1 pcs.<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.200</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20502" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 5, Product 3-->
+						<img src="Images/deco shining.jpg" class="productImage">
+						<font class="productName">Decoration Strings</font>
+						<p class="productDescription">1 pcs. Mention the number of strings and colors in the description box. (gold, silver, blue, purple, red, green)</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.300</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20503" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 5, Product 4-->
+						<img src="Images/deco feather.jpg" class="productImage">
+						<font class="productName">Feathery Strings</font>
+						<p class="productDescription">1 pcs. Available in rainbow colors. Mention the number of strings required in the description box.</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.500</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20504" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+			
+			<tr style="height:15px;"></tr>
+			
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 5, Product 5-->
+						<img src="Images/confetti 2.jpg" class="productImage">
+						<font class="productName">Colored Confetti</font>
+						<p class="productDescription">1 pkt of colored confetti of different shapes.<br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.250</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20505" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 5, Product 6-->
+						<img src="Images/confetti 3.jpg" class="productImage">
+						<font class="productName">Plain Colored Confetti</font>
+						<p class="productDescription">1 pkt of plain colored confetti of star shape.<br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.200</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20506" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 5, Product 7-->
+						<img src="Images/confetti.jpg" class="productImage">
+						<font class="productName">Confetti</font>
+						<p class="productDescription">1 pkt of colored confetti.<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.150</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20507" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 5, Product 8-->
+						<img src="Images/disco ball.jpg" class="productImage">
+						<font class="productName">Disco Ball</font>
+						<p class="productDescription">For rent only.<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.10,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20508" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+			
+			<tr style="height:15px;"></tr>
+			
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 5, Product 9-->
+						<img src="Images/deco strings 1.jpg" class="productImage">
+						<font class="productName">Gold Glittery Strings</font>
+						<p class="productDescription">250 strings of 6 feet per attachment.<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.1,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20509" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 5, Product 10-->
+						<img src="Images/deco strings 2.jpg" class="productImage">
+						<font class="productName">Bronze Glittery Strings</font>
+						<p class="productDescription">250 strings of 6 feet per attachment.<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.1,100</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20510" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 5, Product 11-->
+						<img src="Images/letters.jpg" class="productImage">
+						<font class="productName">Decorated Letters</font>
+						<p class="productDescription">For rent only. Price mentioned per letter. Mention the required letters in the description box.<br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.400</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="20511" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td></td>
+			</tr>
+		</table>
+		
+	</fieldset>
+	</form>
+	
+	<br>
+	
+	<div id="footerContainer">
+	
+		<div id="footerLink" style="width:18%; margin-left:40px; margin-bottom:-90px; padding-top:55px;">
+			26, 15 St Anthoney's Rd,<br>Negombo 11500<br><br>+94 75 916 8916
+		</div>
+	
+		<center>
+			<div>
+				<img src="Images/WEB logo.png" id="footerLogo">
+			</div>
+			<a id="footerLink" href="Contact.html">Contact us |</a>
+			<a id="footerLink" href="About.html"> About</a>
+		</center>
+		
+		<div style="width:10%; margin-left:82%; margin-top:-80px;">
+			<a href="https://web.facebook.com/The-Bliss-103466258740385/"><button class="socialmedia" style="background-image:url('Images/facebook.png');"></button></a>
+			<a href="https://www.instagram.com/the_bliss60/"><button class="socialmedia" style="background-image:url('Images/instagram.png');"></button></a>
+			<a href="https://twitter.com/_The_Bliss_"><button class="socialmedia" style="background-image:url('Images/twitter.png');"></button></a>
+			<a href="mailto: thebliss60@gmail.com"><button class="socialmedia" style="background-image:url('Images/gmail.png');"></button></a>
+		</div>
+		
+	</div>
+	
+</body>
+</html>

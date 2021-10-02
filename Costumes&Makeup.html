@@ -1,0 +1,681 @@
+<html>
+
+<head>
+	<title>The Bliss - We Got Your Event</title>
+	<link rel="icon" href="Images/WEB logo.png" type="image/gif"> 		<!--icon next to the title-->
+	<link rel="stylesheet" type="text/css" href="The Bliss.css">
+	<script language="javascript" type="text/javascript" src="The Bliss.js"></script>
+</head>
+
+<body>
+
+	<div class="fixedHead">
+	<table>
+	    <tr>
+			<td align="center" width="500px">
+				<img src="Images/delivery.png" width="40px" height="40px">
+			</td>
+			<td width=300px align="right">
+			    <h2 style="font-family:papyrus; color:#68118a; font-weight:bold; font-size:35px;"> The Bliss </h2>
+			</td>
+			<td align="center" width="500px">
+				<img src="Images/WEB logo.png" id="logo">
+			</td>
+			<td width=500px>
+			   <h2 style="font-family:papyrus; color:#68118a; font-weight:bold; font-size:35px;"> We Got Your Event </h2>
+			<td align="center" width="350px">
+				<input type="button" name="payments" id="cart" onclick="Payment()">
+			</td>
+		</tr>
+    </table>
+	
+	
+		<div id="navigationBar">
+			<button class="navButtons" onclick="Home()">Home</button>
+			<button class="navButtons" onclick="Cakes()">Cakes</button>
+			<button class="navButtons" onclick="FlowersDeco()">Flowers & Decoration</button>
+			<button class="navButtons" onclick="PhotographyMusic()">Photography & Music</button>
+			<button class="navButtons" onclick="CostumesMakeup()">Costumes & Makeup</button>
+			<button class="navButtons" onclick="Gifts()">Gift Items</button>
+			<button class="navButtons" onclick="Contact()">Contact us</button>
+			<button class="navButtons" style="border-right:none;" onclick="About()">About</button>
+		</div>
+	</div>
+
+	<img src="Images/cover.jpg" id="coverimage">
+	
+	<table width="100%">
+		<tr>
+			<td class="categories"><a class="category">Bridal Dresses</a></td>
+			<td class="categories"><a class="category" href="#category2">Partywear</a></td>
+			<td class="categories"><a class="category" href="#category3">Makeup</a></td>
+			<td class="categories"><a class="category" href="#category4">Jewellery</a></td>
+			<td class="categories"><a class="category" href="#category5">Custom Costumes</a></td>
+		</tr>
+	</table>
+	
+	<form class="form-submit" name="products" method="POST" action="http://localhost/TheBliss/Payment.php">
+	<fieldset id="category1">
+		<legend>Bridal Dresses</legend>
+		
+		<table width="100%">
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 1-->
+						<img src="Images/bridalfrock1.jpg" class="productImage">
+						<font class="productName">White Wedding Gown</font>
+						<p class="productDescription">Flat shoulders embroidery pearl beaded wedding gown with medium puffy sleeves for rent.</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.9,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30101" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 2-->
+						<img src="Images/kandyansaree1.jpg" class="productImage">
+						<font class="productName">Modern Kandyan Saree</font>
+						<p class="productDescription">Modern kandyan bridal dress for rent.<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.30,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30102" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 3-->
+						<img src="Images/bridalsaree1.jpg" class="productImage">
+						<font class="productName">South Indian Bridal Saree</font>
+						<p class="productDescription">South Indian bridal saree for rent. Available in red,gold and green.<br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.8,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30103" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 4-->
+						<img src="Images/lehenga1.jpg" class="productImage">
+						<font class="productName">Bridal Lehenga</font>
+						<p class="productDescription">Dark blue embroidered elegant bridal lehenga choli for rent.<br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.13,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30104" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+			
+			<tr style="height:15px;"></tr>
+			
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 5-->
+						<img src="Images/bridalfrock2.jpg" class="productImage">
+						<font class="productName">Going Away Gown</font>
+						<p class="productDescription">Dark red mermaid wedding dress with 3/4 lace sleeves for rent.<br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.6,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30105" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 6-->
+						<img src="Images/kandyansaree2.jpeg" class="productImage">
+						<font class="productName">Kandyan Saree</font>
+						<p class="productDescription">Pure white traditional kandyan saree for rent.<br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.12,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30106" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 7-->
+						<img src="Images/bridalsaree2.jpg" class="productImage">
+						<font class="productName">Bridal Saree</font>
+						<p class="productDescription">Golden embroidery worked South Indian bridal saree for rent.<br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.5,500</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30107" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 1, Product 8-->
+						<img src="Images/lehenga2.jpg" class="productImage">
+						<font class="productName">Bridal Lehenga</font>
+						<p class="productDescription">South Indian bridal lehenga for rent.<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.7,500</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30108" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</fieldset>
+	
+	<br><br>
+	
+	<fieldset id="category2">
+		<legend>Partywear</legend>
+		<table width="100%">
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 2, Product 1-->
+						<img src="Images/partywear1.jpg" class="productImage">
+						<font class="productName">Sequined Party Dress</font>
+						<p class="productDescription">Silver and blue gradient sequins off the shoulder short sleeve elegent long party dress for rent.</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.6,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30201" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 2, Product 2-->
+						<img src="Images/partywear2.jpg" class="productImage">
+						<font class="productName">Crystal Beaded Gown</font>
+						<p class="productDescription">Long sleeved gray tulle crystals beaded evening gown for rent.<br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.4,500</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30202" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 2, Product 3-->
+						<img src="Images/partywear3.jpg" class="productImage">
+						<font class="productName">Mermaid Dress</font>
+						<p class="productDescription">Elegant lace mermaid dress with detachable skirt and long sleeves. For rent.<br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.7,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30203" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 2, Product 4-->
+						<img src="Images/partywear4.jpg" class="productImage">
+						<font class="productName">Floral Long Prom</font>
+						<p class="productDescription">Long sleeved yellow dress for rent.<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.4,500</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30204" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+			
+			<tr style="height:15px;"></tr>
+			
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 2, Product 5-->
+						<img src="Images/partywear5.jpg" class="productImage">
+						<font class="productName">Lehenga</font>
+						<p class="productDescription">Pink lehenga for rent.<br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.6,500</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30205" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 2, Product 6-->
+						<img src="Images/partywear6.jfif" class="productImage">
+						<font class="productName">Shiny Ball Gown</font>
+						<p class="productDescription">Off shoulder bodycon slim party dress shiny ball gown for rent.<br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.6,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30206" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 2, Product 7-->
+						<img src="Images/partywear7.jpg" class="productImage">
+						<font class="productName">Sequined Long Prom</font>
+						<p class="productDescription">Sparkle sequined ruffles long prom gown for rent.<br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.5,500</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30207" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 2, Product 8-->
+						<img src="Images/partywear8.jpg" class="productImage">
+						<font class="productName">Embroided Lehenga</font>
+						<p class="productDescription">Light blue lehenga for rent.<br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.5,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30208" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</fieldset>
+	
+	<br><br>
+	
+	<fieldset id="category3">
+		<legend>Makeup</legend>
+		<table width="100%">
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 3, Product 1-->
+						<img src="Images/makeup1.png" class="productImage">
+						<font class="productName">Bridal Makeup</font>
+						<p class="productDescription">Bridal makeup.<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.40,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30301" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 3, Product 2-->
+						<img src="Images/makeup2.jpg" class="productImage">
+						<font class="productName">Bridal Makeup</font>
+						<p class="productDescription">Bridal makeup.<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.20,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30302" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 3, Product 3-->
+						<img src="Images/makeup3.jpg" class="productImage">
+						<font class="productName">Bridal Makeup</font>
+						<p class="productDescription">Bridal makeup.<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.30,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30303" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 3, Product 4-->
+						<img src="Images/makeup4.jpg" class="productImage">
+						<font class="productName">Bridal Team Makeup</font>
+						<p class="productDescription">Bride and three bridesmaids makeup.<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.60,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30304" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+			
+			<tr style="height:15px;"></tr>
+			
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 3, Product 5-->
+						<img src="Images/makeup5.jpg" class="productImage">
+						<font class="productName">Bridal Makeup</font>
+						<p class="productDescription">Bridal makeup<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.25,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30305" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 3, Product 6-->
+						<img src="Images/makeup6.jpg" class="productImage">
+						<font class="productName">Bridal Team Makeup</font>
+						<p class="productDescription">Bride and bridesmaids makeup.<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.70,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30306" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 3, Product 7-->
+						<img src="Images/makeup7.jpg" class="productImage">
+						<font class="productName">Special Event Makeup</font>
+						<p class="productDescription">Special occasion makeup and hairstyle.<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.5,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30307" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 3, Product 8-->
+						<img src="Images/makeup8.jpg" class="productImage">
+						<font class="productName">Special Event Makeup</font>
+						<p class="productDescription">Special occasion makeup.<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.3,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30308" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+		</table>
+	
+	</fieldset>
+	
+	<br><br>
+	
+	<fieldset id="category4">
+		<legend>Jewellery</legend>
+		<table width="100%">
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 4, Product 1-->
+						<img src="Images/kandyanjew1.jpg" class="productImage">
+						<font class="productName">Kandyan Bridal Jewellery</font>
+						<p class="productDescription">Kandyan bridal jewellery set for rent.<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.15,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30401" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 4, Product 2-->
+						<img src="Images/kandyanjew2.jpg" class="productImage">
+						<font class="productName">Kandyan Jewellery</font>
+						<p class="productDescription">Modern kandyan jewellery set for rent.<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.12,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30402" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 4, Product 3-->
+						<img src="Images/malahatha1.jpg" class="productImage">
+						<font class="productName">Traditional Malahatha</font>
+						<p class="productDescription">Traditional malahatha for rent.<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.8,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30403" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 4, Product 4-->
+						<img src="Images/malahatha2.jpg" class="productImage">
+						<font class="productName">Malahatha</font>
+						<p class="productDescription">Modern kandyan malahatha for rent.<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.7,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30404" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+			
+			<tr style="height:15px;"></tr>
+			
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 4, Product 5-->
+						<img src="Images/indianjew1.jpg" class="productImage">
+						<font class="productName">Indian Jewelley</font>
+						<p class="productDescription">Indian bridal jewelley set for rent.<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.12,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30405" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 4, Product 6-->
+						<img src="Images/indianjew2.jpg" class="productImage">
+						<font class="productName">Indian Gold Jewellery</font>
+						<p class="productDescription">Traditional Indian jewellery set for rent.<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.8,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30406" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 4, Product 7-->
+						<img src="Images/indianjew3.jpeg" class="productImage">
+						<font class="productName">South Indian Jewellery</font>
+						<p class="productDescription">South Indian jewelley set for rent.<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.6,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30407" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 4, Product 8-->
+						<img src="Images/indianjew4.jpg" class="productImage">
+						<font class="productName">Indian Jewelley</font>
+						<p class="productDescription">Indian jewelley set for rent.<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.9,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30408" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</fieldset>
+	
+	<br><br>
+	
+	<fieldset id="category5">
+		<legend>Custom Costumes</legend>
+		<table width="100%">
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 5, Product 1-->
+						<img src="Images/1santa.jfif" class="productImage">
+						<font class="productName">Santa Claus Costume</font>
+						<p class="productDescription">Santa claus suit is made of high quality red velvet with luxurious faux long hair white trim. For rent.</p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.6,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30501" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 5, Product 2-->
+						<img src="Images/2batman.jpeg" class="productImage">
+						<font class="productName">Batman Costume</font>
+						<p class="productDescription">Dark knight batman costume for rent. Available in medium and large size.<br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.7,500</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30502" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 5, Product 3-->
+						<img src="Images/3pumpkin.jpeg" class="productImage">
+						<font class="productName">Adult Pumpkin Costume</font>
+						<p class="productDescription">Adult pumpkin haloween costume for rent.<br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.5,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30503" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 5, Product 4-->
+						<img src="Images/4supergirl.jfif" class="productImage">
+						<font class="productName">Supergirl Costume</font>
+						<p class="productDescription">Supergirl medium size costume for rent.<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.6,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30504" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+			
+			<tr style="height:15px;"></tr>
+			
+			<tr>
+				<td>
+					<div class="productDetails">		<!--Category 5, Product 5-->
+						<img src="Images/5pirate.jpg" class="productImage">
+						<font class="productName">Adult Pirate Costume</font>
+						<p class="productDescription">Adult pirate costume for rent. Available in medium size.<br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.3,500</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30505" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 5, Product 6-->
+						<img src="Images/6pooh.jpeg" class="productImage">
+						<font class="productName">Winnie the Pooh</font>
+						<p class="productDescription">Medium size Winnie the Pooh costume for rent.<br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.5,500</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30506" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 5, Product 7-->
+						<img src="Images/7unicorn.jpeg" class="productImage">
+						<font class="productName">Kids Unicorn Costume</font>
+						<p class="productDescription">Kids size unicorn costume for rent.<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.4,200</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30507" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>
+					<div class="productDetails">		<!--Category 5, Product 8-->
+						<img src="Images/8scooby.jpeg" class="productImage">
+						<font class="productName">Scooby Doo Costume</font>
+						<p class="productDescription">Kids size Scooby Doo costume for rent.<br><br><br></p>
+						<table id="priceWithCart">
+							<tr>
+								<td><font class="productPrice">Rs.4,000</font></td>
+								<td width="225px" align="right"><button type="submit" id="cart" name="sendpcode" value="30508" onclick="AddToCart()"></button></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+		</table>
+		
+	</fieldset>
+	</form>
+	
+	<br>
+	
+	<div id="footerContainer">
+	
+		<div id="footerLink" style="width:18%; margin-left:40px; margin-bottom:-90px; padding-top:55px;">
+			26, 15 St Anthoney's Rd,<br>Negombo 11500<br><br>+94 75 916 8916
+		</div>
+	
+		<center>
+			<div>
+				<img src="Images/WEB logo.png" id="footerLogo">
+			</div>
+			<a id="footerLink" href="Contact.html">Contact us |</a>
+			<a id="footerLink" href="About.html"> About</a>
+		</center>
+		
+		<div style="width:10%; margin-left:82%; margin-top:-80px;">
+			<a href="https://web.facebook.com/The-Bliss-103466258740385/"><button class="socialmedia" style="background-image:url('Images/facebook.png');"></button></a>
+			<a href="https://www.instagram.com/the_bliss60/"><button class="socialmedia" style="background-image:url('Images/instagram.png');"></button></a>
+			<a href="https://twitter.com/_The_Bliss_"><button class="socialmedia" style="background-image:url('Images/twitter.png');"></button></a>
+			<a href="mailto: thebliss60@gmail.com"><button class="socialmedia" style="background-image:url('Images/gmail.png');"></button></a>
+		</div>
+		
+	</div>
+	
+</body>
+</html>

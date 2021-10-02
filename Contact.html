@@ -1,0 +1,158 @@
+<html>
+
+<head>
+	<title>The Bliss - We Got Your Event</title>
+	<link rel="icon" href="Images/WEB logo.png" type="image/gif"> 		<!--icon next to the title-->
+	<link rel="stylesheet" type="text/css" href="The Bliss.css">
+	<script language="javascript" type="text/javascript" src="The Bliss.js"></script>
+</head>
+
+<body>
+
+	<div class="fixedHead">
+	<table>
+	    <tr>
+			<td align="center" width="500px">
+				<img src="Images/delivery.png" width="40px" height="40px">
+			</td>
+			<td width=300px align="right">
+			    <h2 style="font-family:papyrus; color:#68118a; font-weight:bold; font-size:35px;"> The Bliss </h2>
+			</td>
+			<td align="center" width="500px">
+				<img src="Images/WEB logo.png" id="logo">
+			</td>
+			<td width=500px>
+			   <h2 style="font-family:papyrus; color:#68118a; font-weight:bold; font-size:35px;"> We Got Your Event </h2>
+			<td align="center" width="350px">
+				<input type="button" name="payments" id="cart" onclick="Payment()">
+			</td>
+		</tr>
+    </table>
+	
+	
+		<div id="navigationBar">
+			<button class="navButtons" onclick="Home()">Home</button>
+			<button class="navButtons" onclick="Cakes()">Cakes</button>
+			<button class="navButtons" onclick="FlowersDeco()">Flowers & Decoration</button>
+			<button class="navButtons" onclick="PhotographyMusic()">Photography & Music</button>
+			<button class="navButtons" onclick="CostumesMakeup()">Costumes & Makeup</button>
+			<button class="navButtons" onclick="Gifts()">Gift Items</button>
+			<button class="navButtons" onclick="Contact()">Contact us</button>
+			<button class="navButtons" style="border-right:none;" onclick="About()">About</button>
+		</div>
+	</div>
+	
+	<table width="100%">							<!--for both sides-->
+		<tr style="height:200px;"></tr>
+		<tr>
+			<td width="50%">			<!--width for each form-->
+				<center>
+				<div>						
+
+																	<!--Contact form-->
+				
+					<form name = "ContactForm" method = "POST" action = "http://localhost/TheBliss/contactform.php">
+						<table>
+
+							<tr>
+								<td id="contacthead"><font style="font-size:35px; font-weight:bold;">Contact</font> <i>Form</i></td>
+							</tr>
+							<tr height="60px">															<!--First name-->
+								<td><input type="text" name="fname" placeholder="Name" id="contactboxes"></td>
+							</tr>
+							<tr height="60px">															<!--email-->
+								<td><input type="email" name="email" placeholder="E-mail" id="contactboxes"></td>
+							</tr>
+							<tr height="60px">															<!--phone number-->
+								<td><input type="text" name="subject" placeholder="Subject" id="contactboxes"></td>
+							</tr>
+							<tr height="240px">															<!--message text-->
+								<td>
+									<textarea name="message" rows=10 placeholder="Message Text" id="contactboxes"></textarea>
+								</td>
+							</tr>
+							<tr height="60px">
+								<td align="center">
+									<input type="submit" name="submit" value="Send Message" id="submitButton" class="bothButtons">
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+				</center>
+			</td>
+	
+			<td>
+				
+				<div id="contactDetails">
+					<ul>
+						<li id="contacthead" style="list-style-type:none; margin-left:-30px;"><font style="font-size:35px; font-weight:bold;">Contact</font> <i>Details</i></li>
+						
+						<li id="location">Address:</li>
+						<li style="list-style-type:none;">
+							26, 15 St Anthoney's Rd,<br>Negombo 11500
+						</li>
+						
+						<br>
+						
+						<li id="phone">Phone:</li>
+						<li style="list-style-type:none;">
+							+94 75 916 8916
+						</li>
+						
+						<br>
+						
+						<li id="mail">Mail:</li>
+						<li style="list-style-type:none;">
+							<a href="mailto: thebliss60@gmail.com" style="text-decoration:none; color:black;">thebliss60@gmail.com</a>
+						</li>
+						
+						<br>
+						
+						<li id="website">Website & Social:</li>
+						<li style="list-style-type:none;">
+							<a href="" style="text-decoration:none; color:black;">www.thebliss.com</a>
+						</li>
+						<li style="list-style-type:none;">
+							<table>
+								<tr>
+									<a href="https://web.facebook.com/The-Bliss-103466258740385/"><button class="socialmedia" style="background-image:url('Images/facebook.png');"></button></a>
+									<a href="https://www.instagram.com/the_bliss60/"><button class="socialmedia" style="background-image:url('Images/instagram.png');"></button></a>
+									<a href="https://twitter.com/_The_Bliss_"><button class="socialmedia" style="background-image:url('Images/twitter.png');"></button></a>
+								</tr>
+							</table>
+						</li>
+					</ul>
+				</div>
+				
+			</td>
+		</tr>
+	</table>
+	
+	<br>
+	
+	<div id="footerContainer">
+	
+		<div id="footerLink" style="width:18%; margin-left:40px; margin-bottom:-90px; padding-top:55px;">
+			26, 15 St Anthoney's Rd,<br>Negombo 11500<br><br>+94 75 916 8916
+		</div>
+	
+		<center>
+			<div>
+				<img src="Images/WEB logo.png" id="footerLogo">
+			</div>
+			<a id="footerLink" href="Contact.html">Contact us |</a>
+			<a id="footerLink" href="About.html"> About</a>
+		</center>
+		
+		<div style="width:10%; margin-left:82%; margin-top:-80px;">
+			<a href="https://web.facebook.com/The-Bliss-103466258740385/"><button class="socialmedia" style="background-image:url('Images/facebook.png');"></button></a>
+			<a href="https://www.instagram.com/the_bliss60/"><button class="socialmedia" style="background-image:url('Images/instagram.png');"></button></a>
+			<a href="https://twitter.com/_The_Bliss_"><button class="socialmedia" style="background-image:url('Images/twitter.png');"></button></a>
+			<a href="mailto: thebliss60@gmail.com"><button class="socialmedia" style="background-image:url('Images/gmail.png');"></button></a>
+		</div>
+		
+	</div>
+	
+</body>
+</html>
